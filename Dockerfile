@@ -4,6 +4,8 @@ FROM $BASE_CONTAINER
 
 LABEL maintainer="UC San Diego ITS/ETS <its-academictechinnovation@ucsd.edu>"
 
-USER jovyan
+USER root
 
 RUN pip install --no-cache-dir masspy
+
+USER jovyan
