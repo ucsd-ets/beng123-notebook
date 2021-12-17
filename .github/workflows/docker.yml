@@ -26,7 +26,7 @@ jobs:
 
       - name: Build Image
         run: |
-          docker build --rm --force-rm -t "${IMAGE_NAME}" .
+          docker build --rm --force -t "${IMAGE_NAME}" .
           echo -n "Built image size: "
           docker images "${IMAGE_NAME}" --format "{{.Size}}"
 
