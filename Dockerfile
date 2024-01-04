@@ -12,4 +12,3 @@ RUN apt-get update && \
 RUN pip install --no-cache-dir masspy==0.1.6
 
 USER jovyan
-
