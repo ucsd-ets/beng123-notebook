@@ -1,6 +1,4 @@
-ARG BASE_CONTAINER=ucsdets/datascience-notebook:stable
-
-FROM $BASE_CONTAINER
+FROM ucsdets/datascience-notebook:stable
 
 LABEL maintainer="UC San Diego ITS/ETS <its-academictechinnovation@ucsd.edu>"
 
@@ -11,6 +9,7 @@ RUN apt-get update && \
     add-apt-repository -y universe && \
     apt-get -y install libncurses5-dev libncursesw5-dev libncurses5
 
+RUN pip install --no-cache-dir masspy==0.1.6
+
 USER jovyan
 
-RUN pip install --no-cache-dir masspy==0.1.6
