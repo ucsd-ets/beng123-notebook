@@ -1,4 +1,4 @@
-FROM ucsdets/datascience-notebook:stable
+FROM ghcr.io/ucsd-ets/datascience-notebook:stable
 
 LABEL maintainer="UC San Diego ITS/ETS <its-academictechinnovation@ucsd.edu>"
 
