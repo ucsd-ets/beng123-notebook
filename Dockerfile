@@ -9,7 +9,8 @@ RUN apt-get update && \
     add-apt-repository -y universe && \
     apt-get -y install libncurses5-dev libncursesw5-dev libncurses5
 
-RUN pip install --no-cache-dir masspy==0.1.7
+RUN pip install python==3.8
 RUN pip install --upgrade numpy==1.13
+RUN pip install --no-cache-dir masspy==0.1.7
 
 USER jovyan
