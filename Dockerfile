@@ -1,5 +1,5 @@
 # keeping parent as 2022.1 since masspy isn't in active development
-ARG BASE_CONTAINER=ucsdets/datascience-notebook:2022.1-stable
+ARG BASE_CONTAINER=ghcr.io/ucsd-ets/beng123-notebook:main
 
 FROM $BASE_CONTAINER
 
@@ -14,4 +14,4 @@ RUN apt-get update && \
 
 USER jovyan
 
-RUN pip install --no-cache-dir masspy==0.1.6 libroadrunner==2.1.1
+RUN pip install --no-cache-dir masspy==0.1.6 libroadrunner==2.1.1 numpy==1.22.1 optlang==1.8.1 pandas==1.5.3 sympy==1.12 cobra==0.23.0
