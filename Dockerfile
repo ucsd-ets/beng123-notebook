@@ -14,4 +14,5 @@ RUN apt-get update && \
 
 USER jovyan
 
+# See https://github.com/ucsd-ets/beng123-notebook/blob/main/package-versions.md
 RUN pip install --no-cache-dir masspy==0.1.6 libroadrunner==2.1.1 numpy==1.22.1 optlang==1.8.1 pandas==1.5.3 sympy==1.12 cobra==0.23.0
