@@ -14,4 +14,4 @@ RUN apt-get update && \
 
 USER jovyan
 
-RUN pip install --no-cache-dir masspy==0.1.7 libroadrunner==2.1.1
+RUN pip install --no-cache-dir masspy==0.1.6 libroadrunner==2.1.1
