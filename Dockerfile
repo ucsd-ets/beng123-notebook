@@ -1,3 +1,4 @@
+# keeping parent as 2022.1 since masspy isn't in active development
 ARG BASE_CONTAINER=ucsdets/datascience-notebook:2022.1-stable
 
 FROM $BASE_CONTAINER
